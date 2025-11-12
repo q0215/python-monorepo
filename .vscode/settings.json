@@ -24,5 +24,6 @@
   },
   "[toml]": {
     "editor.defaultFormatter": "tamasfe.even-better-toml"
-  }
+  },
+  "python.analysis.extraPaths": ["./.venv/lib/python3.13/site-packages"]
 }
