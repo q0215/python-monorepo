@@ -1,0 +1,13 @@
+fix = true
+target-version = "py313"
+line-length = 88
+indent-width = 4
+
+[format]
+line-ending = "lf"
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+
+[lint]
+select = ["ALL"]
