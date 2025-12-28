@@ -13,17 +13,12 @@
   "[python]": {
     "editor.defaultFormatter": "charliermarsh.ruff"
   },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[yaml]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[markdown]": {
+  "[json,tpl,markdown,yml,yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[toml]": {
     "editor.defaultFormatter": "tamasfe.even-better-toml"
   },
+  "python.defaultInterpreterPath": ".venv/bin/python",
   "python.analysis.extraPaths": ["./.venv/lib/python3.13/site-packages"]
 }

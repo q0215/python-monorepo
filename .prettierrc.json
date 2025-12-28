@@ -13,7 +13,7 @@
       "options": { "proseWrap": "always" }
     },
     {
-      "files": ["*.json", "*.toml", "*.yml", "*.yaml"],
+      "files": ["*.json", "*.tpl", "*.toml", "*.yml", "*.yaml"],
       "options": { "tabWidth": 2 }
     }
   ]
