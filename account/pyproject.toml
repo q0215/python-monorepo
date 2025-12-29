@@ -6,7 +6,6 @@ readme = "README.md"
 requires-python = ">=3.13"
 authors = [{ name = "Kentaro Kiuchi", email = "kentaro.kiuchi@outlook.jp" }]
 dependencies = [
-  "alembic>=1.17.2",
   "dependency-injector>=4.48.2",
   "fastapi>=0.121.1",
   "psycopg[binary]>=3.3.2",
@@ -15,8 +14,9 @@ dependencies = [
   "uvicorn>=0.38.0",
 ]
 
-[project.optional-dependencies]
-dev = ["pytest>=8.4.2", "ruff>=0.14.3"]
+[dependency-groups]
+dev = ["pytest>=9.0.2", "ruff>=0.14.10"]
+migration = ["alembic>=1.17.2"]
 
 [build-system]
 requires = ["setuptools>=61.0"]
