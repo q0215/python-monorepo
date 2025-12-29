@@ -1,0 +1,18 @@
+networks:
+  default:
+    name: python-monorepo-network
+
+services:
+  accountdb:
+    image: "postgres:18.1"
+    container_name: accountdb
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-accountdb}
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
+    command: >
+      postgres -c wal_level=logical
+               -c max_wal_senders=10
+               -c max_replication_slots=10
